@@ -18,13 +18,22 @@ p {
   font-size: 1.4rem;
   font-weight: 300;
   color: #4f4f4f;
-  vertical-align: middle;
 }
 
 h1 {
   font-size: 3rem;
   font-weight: 500;
-  padding-bottom: 0.8rem;
+  padding-bottom: 0.4rem;
+}
+
+h2{
+  font-size: 2.0rem;
+  font-weight: 400;
+}
+
+h5{
+  font-weight: 400;
+  color: #8f8f8f;
 }
 
 .nav {
@@ -47,7 +56,7 @@ a, a:visited {
   text-decoration: none;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   transition: color 0.3s;
   color: #4f4f4f;
 }
@@ -73,58 +82,78 @@ a:hover {
   text-align: right;
 }
 
-/* CONTENT */
-.module{
+/* MODULE */
+.module {
   display: flex;
   align-items: center;
-  height: 100vh;
-
 }
 
-.content{
-  max-width: 960px;
+.module_heading{
+  height: 100vh;
+}
+
+.module_contact {
+  height: 100vh;
+}
+
+
+/* CONTENT */
+.content {
+  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
 }
 
-.component {
-  display: flex;
-  align-items: center;
-}
-
-
-
-.component_heading{
-}
-
-
-@media (max-width: 960px) {
+@media (max-width: 1000px) {
   .content {
-    max-width: 760px;
+    max-width: 800px;
   }
 }
 
-.component_heading .image{
-  flex: 0.2;
+/* COMPONENT */
+.component {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
 }
 
-.component_heading div{
+.component_heading {}
+
+.component_heading div {
   flex: 0.8;
+}
+
+.component_heading .image {
+  flex: 0.2;
 }
 
 .component_heading .image img {
   width: 100%;
 }
 
+/* SKILLS */
+.skill:not(:first-child){
+  padding-left: 35px;
+}
+
+.skill_type{
+  margin-top: 25px;
+}
+
+.skill{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.skill_name{
+  border-bottom: 1px solid #000;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.
+
 /* CONTACT */
-
-.component_contact div{
-  flex: 1;
-}
-
-.module_dark{
-  background-color: #171717;
-}
-
-.component_contact h1, .component_contact p{
-  color: #fff;
+.contact_text{
+  display: flex;
 }
