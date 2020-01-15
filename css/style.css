@@ -56,7 +56,7 @@ a, a:visited {
   text-decoration: none;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   transition: color 0.3s;
   color: #4f4f4f;
 }
@@ -86,16 +86,13 @@ a:hover {
 .module {
   display: flex;
   align-items: center;
+  margin-bottom: 140px;
 }
 
-.module_heading{
+.full{
   height: 100vh;
+  margin-bottom: 0px;
 }
-
-.module_contact {
-  height: 100vh;
-}
-
 
 /* CONTENT */
 .content {
@@ -117,27 +114,27 @@ a:hover {
   padding: 0 20px;
 }
 
-.component_heading {}
+.heading{
+  margin-bottom: 10px;
+}
 
-.component_heading div {
+/* INTRO */
+
+.intro {
   flex: 0.8;
 }
 
-.component_heading .image {
+.intro_image {
   flex: 0.2;
 }
 
-.component_heading .image img {
+.intro_image img {
   width: 100%;
 }
 
 /* SKILLS */
 .skill:not(:first-child){
-  padding-left: 35px;
-}
-
-.skill_type{
-  margin-top: 25px;
+  margin-left: 35px;
 }
 
 .skill{
@@ -151,9 +148,58 @@ a:hover {
   margin-bottom: 5px;
 }
 
-.
+.skill_spacer{
+  height: 50px;
+}
 
 /* CONTACT */
+
+.contact_image {
+  flex: 0.6;
+}
+
+.component .contact_text {
+  flex: 0.4;
+}
+
+.component .image img{
+  width: 100%;
+}
+
+.contact_top{
+  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
 .contact_text{
-  display: flex;
+  padding-left: 25px;
+}
+
+#mail_link{
+  text-transform: lowercase;
+}
+
+#mail_link:hover{
+  text-decoration: underline;
+  color: blue;
+}
+
+/* PROJECTS */
+.project{
+  align-self: flex-start;
+  border-top: 1px solid #000;
+  flex: 1;
+}
+
+.project{
+  flex: 0.5;
+}
+
+.project_image a img{
+    width: 100%;
+}
+
+.project:not(:first-child){
+  margin-left: 35px;
 }
