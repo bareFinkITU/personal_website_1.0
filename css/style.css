@@ -136,6 +136,9 @@ a:hover {
     width: 100%;
   }
 
+  .nav a{
+    padding: 10px 4px;
+  }
 }
 
 /* COMPONENT */
