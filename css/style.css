@@ -15,7 +15,7 @@ html {
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 22px;
   font-weight: 400;
   color: #4f4f4f;
 }
@@ -116,9 +116,14 @@ a:hover {
 }
 
 @media only screen and (max-width: 670px){
-  .component:not(:last-child){
+  .component{
     flex-direction: column;
   }
+
+  #component_heading{
+    flex-direction: row;
+  }
+
   .skill{
     margin-left: 0px !important;
   }
@@ -139,6 +144,7 @@ a:hover {
   align-items: center;
   padding: 0 20px;
 }
+
 
 .heading{
   margin-bottom: 10px;
@@ -223,6 +229,7 @@ a:hover {
     flex-direction: column;
   }
   .project{
+    border-top: 1px solid #DfDfDf;
     margin-left: 0px !important;
   }
 }
@@ -231,6 +238,7 @@ a:hover {
   align-self: flex-start;
   flex: 1;
   padding-top: 10px;
+  margin-bottom: 20px;
 }
 
 .project_image{
